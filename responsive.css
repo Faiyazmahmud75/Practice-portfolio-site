@@ -1,0 +1,238 @@
+@media(max-width:768px) {
+    header {
+        width: 100%;
+        height: auto;
+    }
+
+    header .logo {
+        margin-left: 30px;
+    }
+
+    header .checkbtn {
+        display: block;
+    }
+
+    header .nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #f9f9ff;
+        top: 78px;
+        right: -100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        transition: all .5s;
+    }
+
+    header .nav ul li {
+        line-height: 30px;
+        clear: both;
+        margin-top: 15px;
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    #check:checked ~ ul {
+        right: 0;
+    }
+
+    /*header responsive css end*/
+    section {
+        margin-top: 100px;
+    }
+
+    section.banner {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-top: 78px !important;
+        padding-top: 20px;
+        position: relative;
+    }
+
+    section.banner .bannerContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.banner .bannerContent h1 {
+        width: 100vw;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    section.banner .bannerContent P {
+        width: 65vw;
+        text-align: start;
+    }
+
+    section.banner .bannerContent button {
+        padding: 10px 15px;
+        font-size: 11px;
+    }
+
+    /*Banner responsive css end*/
+    section.about {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .aboutImage {
+        width: 100vw !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutContent h1 {
+        width: 100vw;
+        text-align: center;
+        font-size: 1.6rem !important;
+    }
+
+    .aboutContent p {
+        width: 80vw !important;
+        margin-bottom: 30px;
+        text-align: start;
+    }
+
+    .aboutContent button {
+        padding: 12px 8px !important;
+        font-size: 11px;
+        margin: 0 !important;
+    }
+
+    /*about resposive css end*/
+    section.services {
+        margin-top: 200px;
+    }
+
+    .ServiceHeading {}
+
+    .ServiceHeading h1 {
+        margin-top: 50px;
+        font-size: 2rem !important;
+    }
+
+    .ServiceHeading p {
+        width: 85vw !important;
+        line-height: 20px;
+    }
+
+    .signleService p {
+        width: 250px;
+        text-align: justify !important;
+        font-size: 14px !important;
+    }
+
+    /*services responsive css end*/
+    section.Features h1 {
+        font-size: 1.95rem !important;
+    }
+
+    section.Features > p {
+        margin-top: 5px;
+    }
+
+    /*Feature responsive css end*/
+    section.Plan > h1 {
+        font-size: 2rem !important;
+    }
+
+    section.Plan > p {
+        width: 90vw;
+        text-align: justify;
+    }
+
+    .all-plans {
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .single-plan {
+        width: 200px !important;
+    }
+
+    .plan-details p {
+        font-size: 12px !important;
+    }
+
+    .plan-price button {
+        width: 100%;
+        font-size: 11px;
+        padding: 10px 8px !important;
+    }
+
+    .plan-price h1 {
+        font-size: 1.2rem !important;
+    }
+
+    /*Plan responsive CSS end*/
+    section.Blog {
+        margin-top: 0px !important;
+        padding-top: 100px !important;
+        height: 1450px !important;
+    }
+
+    section.Blog > h1 {
+        font-size: 1.75rem !important;
+    }
+
+    section.Blog > p {
+        width: 90vw !important;
+        text-align: justify;
+        line-height: 18px !important;
+    }
+
+    .single-blog {
+        width: 50vw !important;
+        margin-bottom: 50px !important;
+    }
+
+    .single-blog h4 {
+        margin-top: 10px !important;
+    }
+
+    .blog-cover {
+        width: 50vw !important;
+    }
+
+    /*Blog responsive end*/
+    footer {}
+
+    footer p {
+        font-size: 11px !important;
+    }
+
+    footer h5 {
+        font-size: 20px !important;
+    }
+
+    .footer-content {
+        margin: 20px 0px;
+    }
+
+    .about-me {
+        width: 330px !important;
+    }
+
+    .newsletter {
+        width: 330px !important;
+    }
+
+    .social {
+        width: 65vw !important;
+    }
+}

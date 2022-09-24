@@ -1,0 +1,676 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    color: #464646a6;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #222222;
+    text-transform: capitalize;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background: linear-gradient(to right, #e0e1e7f2, #fffffff5);
+}
+
+.logo {
+    width: 150px;
+    margin: 20px;
+    margin-left: 50px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    margin-right: 50px;
+}
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    display: none;
+    font-size: 30px;
+    color: #222222;
+    float: right;
+    line-height: 40px;
+    margin-right: -50px;
+    cursor: pointer;
+}
+
+.nav ul {
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav ul li {
+    float: left;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: arial;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.nav ul li a:hover {
+    color: #7f97ff;
+}
+
+/*--------End of header--------*/
+
+section {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+section.banner {
+    background-color: #f9f9ff;
+    margin-top: 77px;
+}
+
+section .Content,
+.Image {
+    width: 40%;
+    margin: auto;
+}
+
+section .bannerContent {}
+
+section .Content h3 {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-family: arial;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #222222;
+}
+
+section .Content h1 {
+    color: #222222;
+    font-family: arial;
+    padding: 20px 0px;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+section .Content p {
+    color: #a1a1a1;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+section .Content button {
+    margin-top: 50px;
+    padding: 15px 30px;
+    background: linear-gradient(to right, #8491ff, #63bdfc);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s, ease-in 0.25s;
+}
+
+section .Content button:hover {
+    box-shadow: 5px 10px 30px rgb(130 147 255 / 50%);
+}
+
+section .Content button a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+}
+
+/*--------End of banner--------*/
+
+section.about {
+    height: 500px;
+}
+
+section .aboutImage {
+    width: 45%;
+}
+
+section.about .aboutContent h1 {
+    font-size: 35px;
+}
+
+section.about .aboutContent p {
+    width: 95%;
+}
+
+/*--------End of About--------*/
+
+section.services {
+    flex-direction: column;
+}
+
+section.services .ServiceHeading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.ServiceHeading h1 {
+    text-transform: capitalize;
+    font-size: 42px;
+    color: #222222;
+}
+
+.ServiceHeading p {
+    width: 500px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+section.services .AllServices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.signleService {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+    cursor: pointer;
+}
+
+.signleService i {
+    font-size: 35px;
+    color: #6c6c6c;
+    margin-bottom: 10px;
+}
+
+.signleService h3 {
+    text-transform: capitalize;
+    padding: 20px;
+    color: #222222;
+    font-size: 22px;
+    font-family: monospace;
+}
+
+.signleService p {
+    text-align: center;
+    font-size: 16px;
+}
+
+.signleService:hover i {
+    background: -webkit-linear-gradient(#a2b0ff, #9ce0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.signleService:hover h3 {
+    color: #8491ff;
+}
+
+/*-----End of service CSS-----*/
+
+section.achievments {
+    background: linear-gradient(90deg, #8491ff, #63bdfc);
+}
+
+section.achievments .AllAchievments {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding: 70px 0px;
+}
+
+.singleAchievment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+}
+
+.singleAchievment h2 {
+    font-size: 2rem;
+    color: white;
+}
+
+.singleAchievment p {
+    color: white;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+/*------End of achievment CSS------*/
+
+section.Features {
+    flex-direction: column;
+}
+
+section.Features h1 {
+    color: #222222;
+    font-size: 2.4rem;
+    text-align: center;
+    margin-top: 50px;
+}
+
+section.Features p {}
+
+.filter {
+    margin-top: 50px;
+}
+
+.filter ul {
+    list-style: none;
+}
+
+.filter ul li {
+    float: left;
+    padding: 40px 15px;
+}
+
+.filter ul li a {
+    text-decoration: none;
+    color: #000000e6;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.all-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter ul li:first-child {}
+
+.signle-feature {
+    width: 300px;
+    text-align: center;
+    margin: 10px 15px;
+    cursor: pointer;
+}
+
+.signle-feature h3 {
+    margin-top: 20px;
+    color: #222222;
+}
+
+.single-feature p {}
+
+.feature-image {
+    width: 300px;
+    height: 299px;
+    border-radius: 3%;
+    background: linear-gradient(90deg, #8491ff, #63bdfc);
+    overflow: hidden;
+    position: relative;
+}
+
+.feature-image:hover > img {
+    transition: all ease 0.5s;
+    opacity: 0.2;
+}
+
+.feature-image i {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    font-size: initial;
+    color: white;
+    opacity: 0;
+}
+
+.icon {
+    position: absolute;
+    top: 45%;
+    left: 42%;
+}
+
+.icon img {
+    opacity: 0;
+}
+
+.feature-image:hover .icon > img {
+    opacity: 1;
+    transition: all ease 0.5s;
+}
+
+/*------End of achievment CSS------*/
+
+section.Plan {
+    flex-direction: column
+}
+
+section.Plan > h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+section.Plan p {}
+
+.all-plans {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.single-plan {
+    width: 230px;
+    text-align: center;
+    background-color: #f9f9ff;
+    padding: 20px;
+}
+
+.single-plan:hover {
+    background: linear-gradient(90deg, #8491ff, #63bdfc);
+    transform: scale(1.05);
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+
+
+.plan-price h1 {
+    font-size: 2.rem;
+}
+
+.single-plan:hover .plan-serial {
+    background-color: #ffffff38;
+}
+
+.single-plan:hover .plan-serial h2 {
+    background: linear-gradient(88deg, #8491ff, #63bdfc);
+    color: white;
+}
+
+.single-plan:hover h3 {
+    color: #ffffffd1;
+}
+
+.single-plan:hover p {
+    color: #ffffffd1;
+}
+
+.single-plan:hover button {
+    display: block;
+}
+
+.plan-serial {
+    width: 130px;
+    height: 125px;
+    margin: auto;
+    border-radius: 50%;
+    background: #6e87ff2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan-serial h2 {
+    background: #f9f9ff;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    font-size: 1.8rem;
+}
+
+.tier {
+    margin: 15px 0px 40px 0px;
+}
+
+.tier h3 {
+    padding: 5px;
+    color: #222222;
+}
+
+.tier p {}
+
+.plan-details {}
+
+.plan-details hr {
+    background-color: #e3d6ff80;
+    border: none;
+    height: 1px;
+}
+
+.plan-details p {
+    padding: 6px 0px;
+    font-size: 13px;
+}
+
+.plan-price {
+    margin-top: 35px;
+    position: relative;
+}
+
+.plan-price button {
+    background: white;
+    color: #222222;
+    padding: 10px 62px;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: none;
+    cursor: pointer;
+}
+
+/*------End of Plan CSS------*/
+
+section.Blog {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 750px;
+    margin-top: 100px;
+    padding-bottom: 200px;
+    background-color: #f9f9ff;
+}
+
+section.Blog h1 {
+    font-size: 2rem;
+    padding-top: 50px;
+}
+
+section.Blog > p {
+    width: 550px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 10px 0px 50px 0px;
+}
+
+.all-blogs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.single-blog {
+    width: 260px;
+    margin: 0px 15px;
+    cursor: pointer;
+}
+
+.single-blog .blog-cover {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+}
+
+.single-blog .blog-cover img {
+    transition: all 0.3s;
+}
+
+.single-blog ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.single-blog ul li {
+    font-size: 12px;
+    font-weight: normal;
+    color: #00000094;
+    padding: 2px 5px;
+}
+
+.single-blog ul li i {
+    color: #8491ffa6;
+}
+
+.single-blog h4 {
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.single-blog p {
+    margin-top: 10px;
+    line-height: 22px;
+}
+
+.single-blog:hover h4 {
+    color: #8491ff;
+    transition: all ease 0.5s;
+}
+
+.single-blog:hover .blog-cover > img {
+    transform: scale(1.05);
+}
+
+/*------End of Blog CSS------*/
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 80px 0px;
+    background-color: #04091e;
+    color: white;
+}
+
+footer h5 {
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+footer .about-me {
+    width: 330px;
+}
+
+footer p {
+    color: #ffffff5c;
+    font-size: 13px;
+    line-height: 22px;
+}
+
+footer .about-me i {}
+
+.newsletter {
+    width: 300px;
+}
+
+.newsletter p {}
+
+.newsletter input {
+    margin-top: 15px;
+    width: 80%;
+    padding: 10px 15px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    color: #00000099;
+}
+
+.newsletter button {
+    color: white;
+    padding: 10px 15px;
+    background: #8491ff;
+    border: none;
+    outline: none;
+    transform: translateX(-4px);
+    cursor: pointer;
+}
+
+.newsletter button i {}
+
+.social {
+    width: 150px;
+}
+
+.social p {}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: white;
+}
+
+.social-icons i {
+    padding: 0px 5px;
+    cursor: pointer;
+}
+
+.social-icons i:hover {
+    color: #8491ff;
+    transition: all ease-in 0.3s;
+}
